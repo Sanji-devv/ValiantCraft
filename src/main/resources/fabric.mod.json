@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "valiantcraft",
+	"version": "${version}",
+	"name": "ValiantCraft",
+	"description": "ValiantCraft",
+	"authors": [
+		"Erdem Uğur Şahin"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod/sonradan değiştir"
+	},
+	"license": "MIT-License",
+	"icon": "assets/valiantcraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.valiant.ValiantCraft"
+		],
+		"fabric-datagen": [
+			"com.valiant.ValiantCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"valiantcraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
