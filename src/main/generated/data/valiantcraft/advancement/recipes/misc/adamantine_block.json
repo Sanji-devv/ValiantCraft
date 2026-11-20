@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_adamantine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "valiantcraft:adamantine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "valiantcraft:adamantine_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_adamantine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "valiantcraft:adamantine_block"
+    ]
+  }
+}

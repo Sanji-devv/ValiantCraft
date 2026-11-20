@@ -27,6 +27,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider
                 .add(BuiltInRegistries.BLOCK.getResourceKey(ModBlocks.ADAMANTINE_ORE).orElseThrow())
                 .add(BuiltInRegistries.BLOCK.getResourceKey(ModBlocks.ADAMANTINE_DEEPSLATE_ORE).orElseThrow());
 
+        // These blocks require a tool tier above diamond. Lower-tier pickaxes mine them slowly
+        // and cannot harvest drops; netherite pickaxes remain a valid tier.
+        builder(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .add(BuiltInRegistries.BLOCK.getResourceKey(ModBlocks.ADAMANTINE_BLOCK).orElseThrow())
+                .add(BuiltInRegistries.BLOCK.getResourceKey(ModBlocks.ADAMANTINE_ORE).orElseThrow())
+                .add(BuiltInRegistries.BLOCK.getResourceKey(ModBlocks.ADAMANTINE_DEEPSLATE_ORE).orElseThrow());
+
         builder(ModBlockTags.NEEDS_NETHERITE_PICKAXE)
                 .add(BuiltInRegistries.BLOCK.getResourceKey(ModBlocks.ADAMANTINE_BLOCK).orElseThrow())
                 .add(BuiltInRegistries.BLOCK.getResourceKey(ModBlocks.ADAMANTINE_ORE).orElseThrow())

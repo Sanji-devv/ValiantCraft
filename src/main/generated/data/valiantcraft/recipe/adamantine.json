@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "adamantine",
+  "ingredients": [
+    "valiantcraft:adamantine_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "valiantcraft:adamantine"
+  }
+}
