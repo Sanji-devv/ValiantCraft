@@ -1,5 +1,8 @@
 package com.valiant;
 
+import com.valiant.creativemodetab.ModeCreativeModeTabs;
+import com.valiant.item.ModItems;
+import com.valiant.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
@@ -13,7 +16,9 @@ public class ValiantCraft implements ModInitializer
 	@Override
 	public void onInitialize()
 	{
-
+		ModeCreativeModeTabs.registerModCreativeModeTabs();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path)
