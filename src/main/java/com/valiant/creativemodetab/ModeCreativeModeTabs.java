@@ -23,6 +23,7 @@ public final class ModeCreativeModeTabs
                     .displayItems((parameters, output) ->
                     {
                         output.accept(ModItems.AMETHYST_DUST);
+                        output.accept(ModItems.RAW_ADAMANTINE);
                         output.accept(ModItems.ADAMANTINE);
                         output.accept(ModBlocks.ADAMANTINE_BLOCK);
                         output.accept(ModBlocks.ADAMANTINE_ORE);

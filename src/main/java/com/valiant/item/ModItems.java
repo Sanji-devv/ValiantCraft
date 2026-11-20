@@ -20,6 +20,7 @@ public final class ModItems
 	public static final Item AMETHYST_DUST = register("amethyst_dust", new Item.Properties());
 
 	//ORE
+	public static final Item RAW_ADAMANTINE = register("raw_adamantine", new Item.Properties());
 	public static final Item ADAMANTINE = register("adamantine", new Item.Properties());
 
 	private static Item register(String path, Item.Properties properties)

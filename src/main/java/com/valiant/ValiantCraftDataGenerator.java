@@ -1,5 +1,7 @@
 package com.valiant;
 
+import com.valiant.datagen.ModBlockLootTableProvider;
+import com.valiant.datagen.ModBlockTagsProvider;
 import com.valiant.datagen.ModModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -12,5 +14,7 @@ public class ValiantCraftDataGenerator implements DataGeneratorEntrypoint
 		var pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModBlockTagsProvider::new);
+		pack.addProvider(ModBlockLootTableProvider::new);
 	}
 }

@@ -31,6 +31,7 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerators.generateFlatItem(ModItems.AMETHYST_DUST, ModelTemplates.FLAT_ITEM);
 
         //ORES
+        itemModelGenerators.generateFlatItem(ModItems.RAW_ADAMANTINE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.ADAMANTINE, ModelTemplates.FLAT_ITEM);
     }
 }
